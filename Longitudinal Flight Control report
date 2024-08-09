@@ -1,0 +1,19 @@
+Project contents:
+* Simulink file (.slx), consisting of the model.
+* MATLAB file (.mlx), containing the parameters and the state space representation.
+
+Title: Longitudinal FLight Control
+
+Description: 
+* Guidance, Navigation and Control for a missile using Linear Quadratic Gaussian Control and PID.
+
+Procedure:
+* The primary goal was to ensure the missile's precise navigation, accurate targeting, and stable flight path. 
+* The guidance system determines the optimal trajectory for the missile to reach its target. It calculates the desired flight path angle and direction based on the target location and other factors.
+* The navigation component ensures that the missile knows its own position and orientation accurately during flight. This information is crucial for making real-time adjustments to the trajectory.
+* The control system is responsible for adjusting the missile's control surfaces, such as fins or thrusters, to maintain the desired flight path and stability. It continuously receives feedback from sensors and adjusts the control surfaces to correct any deviations from the intended trajectory.
+* LQG control is a sophisticated control strategy that combines the benefits of Linear Quadratic Regulation (LQR) and Kalman filtering. LQR optimally calculates the control inputs to minimize a performance index, ensuring stability and desired system behavior. The Kalman filter, on the other hand, estimates the true state of the system by combining noisy sensor measurements with a dynamic system model.
+   - By integrating LQR and Kalman filtering, the missile's control system becomes highly efficient and robust. LQG control allows for optimal control adjustments, ensuring the missile follows the desired trajectory accurately.
+* PID control likely played a role in fine-tuning the missile's trajectory. While LQG provides optimal control, PID control can be used for specific adjustments, ensuring the missile responds quickly to changing conditions or external disturbances.
+*  Kalman filter was crucial for estimating the missile's states, such as position, velocity, and orientation. These accurate state estimates are vital for the control system to make precise adjustments to the missile's trajectory.
+
