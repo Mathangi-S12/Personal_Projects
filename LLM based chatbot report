@@ -1,0 +1,19 @@
+Objective:
+* Develop a web-based chatbot that engages in human-like conversations using a pre-trained language model, integrated with a Flask server.
+
+Tools and Libraries:
+* Flask: Web framework for serving the chatbot application.
+* Flask-CORS: Enables cross-origin requests.
+* Transformers: Provides the pre-trained "facebook/blenderbot-400M-distill" model.
+* PyTorch: Deep learning framework for running the model.
+
+Implementation:
+* Configured a basic Flask server with endpoints for home and chatbot interaction.
+* Enabled CORS to handle cross-origin requests.
+* Loaded the "facebook/blenderbot-400M-distill" model using the Transformers library.
+* Tokenized input and conversation history to generate context-aware responses.
+* Maintained conversation history to ensure continuity in dialogue.
+* Designed an API endpoint (/chatbot) to process user input and return the chatbot’s response.
+
+Results:
+* The chatbot application functions effectively, generating coherent responses based on ongoing conversation context.
