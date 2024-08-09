@@ -1,0 +1,25 @@
+Project:
+* The project focuses on developing a custom chatbot using the LangChain framework in conjunction with IBM Watson Machine Learning. The chatbot leverages state-of-the-art language models to provide accurate responses based on user queries and document content.
+
+Dependencies and Libraries:
+* Language Model Libraries: LangChain, IBM Watson Machine Learning
+* Python Libraries: torch, ibm-watson-machine-learning, langchain, chroma, PyPDFLoader, sentence-transformers, transformers
+
+* Environment Setup: Python environment with required packages installed via pip
+* Model and Embeddings: IBM Watson LLaMA 2 model, Hugging Face Instruct Embeddings
+* Document Handling: PDF Loader for text extraction, Chroma for vector storage
+
+Objectives:
+* Chatbot Initialization: Configure and initialize the LLaMA 2 language model from IBM Watson and setup embeddings for document processing.
+* Document Processing: Implement functionality to load and process PDF documents. This includes splitting the document into manageable chunks and storing embeddings using Chroma.
+* QA Chain Building: Create a Retrieval QA chain to enable effective question-answering based on document content and user queries.
+* Conversation Management: Manage conversation history and handle user prompts to ensure a coherent interaction flow.
+
+Work Done:
+* Model Initialization: Set up LLaMA 2 model and Hugging Face embeddings for language understanding and generation.
+* Document Processing: Implemented a function to load, split, and embed PDF documents. The Chroma vector store was used to manage and query these embeddings.
+* Prompt Handling: Developed a function to handle user queries, using the Retrieval QA chain to generate responses based on the processed documents and conversation history.
+
+Outputs:
+* Chatbot Interaction: Capable of processing user queries and providing responses based on document content.
+* Document Integration: Successful integration of document processing with the chatbot, enabling context-aware responses.
