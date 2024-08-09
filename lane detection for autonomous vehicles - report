@@ -1,0 +1,33 @@
+Title: Lane detection for Autonomous Vehicles
+
+Project Overview:
+* The project implements a lane detection system using computer vision techniques. The system processes both static images and video frames to detect and highlight lane markings, employing edge detection, line fitting, and region masking techniques.
+
+Dependencies and Libraries:
+* OpenCV: For image and video processing.
+* NumPy: For numerical operations.
+* Matplotlib: For plotting (if needed for visualization).
+
+Objectives:
+* Image Preprocessing: Convert the image to grayscale and apply Gaussian blur to reduce noise.
+* Edge Detection: Use the Canny edge detector to identify edges in the image.
+* Region of Interest (ROI) Masking: Define and mask the region where lane lines are expected to be found.
+* Line Detection: Detect lines using the Hough Transform.
+* Line Averaging: Average detected lines to improve robustness.
+* Lane Overlay: Overlay detected lane lines onto the original image or video frame.
+
+Work Done:
+* Canny Edge Detection: Applied Gaussian blur and Canny edge detection to preprocess images and video frames.
+* Region of Interest Masking: Defined a triangular ROI to focus on lane detection within a specific area.
+Line Detection and Averaging:
+* Hough Line Transform: Detected lines using the Hough Transform with specific parameters for line length and gap.
+* Line Averaging: Averaged slopes and intercepts of detected lines to generate a single representative line for each side of the lane.
+Visualization:
+* Display Lines: Drew detected and averaged lines onto a blank image.
+* Overlay: Combined the lane-detection result with the original image to highlight detected lanes.
+Video Processing:
+* Frame-by-Frame Processing: Applied the lane detection algorithm to each frame of the video.
+* Real-Time Display: Displayed the processed video with lane markings overlaid in real-time.
+
+Outputs:
+Video Processing: Implemented lane detection system for video streams, displaying lane markings on each frame.
